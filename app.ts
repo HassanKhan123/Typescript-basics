@@ -1,9 +1,15 @@
-let userInput:unknown;
-let userName:string
+let userInput: unknown;
+let userName: string;
 
-userInput=5;
-userInput='Hassan'
+userInput = 5;
+userInput = "Hassan";
 
-if(typeof userInput === 'string'){
-    userName=userInput
+if (typeof userInput === "string") {
+  userName = userInput;
 }
+
+function generateError(message: string, code: number): never {
+  throw { message, errorCode: code };
+}
+
+generateError("Error", 500);
