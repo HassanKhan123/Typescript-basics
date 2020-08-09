@@ -2,7 +2,8 @@
 var obj = {
     name: "Hassan",
     age: 30,
-    hobbies: ['Cricket', 'Coding']
+    hobbies: ["Cricket", "Coding"],
+    role: [2, "author"]
 };
 console.log(obj.age);
 for (var _i = 0, _a = obj.hobbies; _i < _a.length; _i++) {
